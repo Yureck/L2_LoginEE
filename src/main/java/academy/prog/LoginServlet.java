@@ -25,7 +25,7 @@ public class LoginServlet extends HttpServlet {
             message = "Password wasn't entered correctly or the password is too short (" +
                       "less than 10 symbols) or it isn't strong enough";
         } else if (valAge < 18) {
-            message = "The age should be over 18 or was entered incorrectly!";
+            message = "The age should be over 17 or was entered incorrectly!";
         }
         PrintWriter pw = response.getWriter();
         pw.println("<html><head><title>Wrong data</title></head><body><p style=\"color: red; font-size: 1.5rem\">"+
